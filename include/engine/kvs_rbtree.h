@@ -4,17 +4,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "allocator/kvs_alloc.h" 
 
 #define RED 1
 #define BLACK 2
 
 #define ENABLE_KEY_CHAR 1
-
-#if ENABLE_KEY_CHAR
 typedef char *KEY_TYPE;
-#else
-typedef int KEY_TYPE; // key
-#endif
 
 typedef struct _rbtree_node
 {
